@@ -133,23 +133,11 @@ class Game {
   }
 
   handleFuel(index) {
-    // Adding fuel
-    cars[index - 1].overlap(fuels, function(collector, collected) {
-      player.fuel = 185;
-      //collected is the sprite in the group collectibles that triggered
-      //the event
-      collected.remove();
-    });
+  
   }
 
   handlePowerCoins(index) {
-    cars[index - 1].overlap(powerCoins, function(collector, collected) {
-      player.score += 21;
-      player.update();
-      //collected is the sprite in the group collectibles that triggered
-      //the event
-      collected.remove();
-    });
+   
   }
 
   // C39
